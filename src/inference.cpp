@@ -114,7 +114,7 @@ Caffe::set_mode(Caffe::CPU);
 
   cv::Mat cv_resized;
   // reading image file
-	cv::Mat cv_img = cv::imread("3.jpg");
+	cv::Mat cv_img = cv::imread("img/3.jpg");
   // image resize
   cv::resize(cv_img, cv_resized, cv::Size(300, 300));
 
@@ -131,7 +131,7 @@ Caffe::set_mode(Caffe::CPU);
 	int width = int(cv_resized.cols );
 
 
-	std::cout << "imagename " << "3.jpg" << endl;
+
 
 	float *data_buf= new float[height * width * 3];
 
@@ -229,6 +229,8 @@ Caffe::set_mode(Caffe::CPU);
 
 vis_detections(cv_img, boxes, conf, labels ,cv_img.rows, cv_img.cols); // call for visualization
 cv::imwrite("vis.jpg",  cv_img);
+
+std::cout << "finished" << endl;
 
 return 0;
 
