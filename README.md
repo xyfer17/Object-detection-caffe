@@ -1,10 +1,7 @@
  # Object-detection-caffe
 
 
-
-
-
-
+![detection](/assets/vis.jpg)
 
 
  ### Steps to build Caffe-SSD for object detection:
@@ -94,9 +91,9 @@
 
 * open `inference.cpp` file using your text-editor and the search the below code inside it.
 ```
-cv::Mat cv_img = cv::imread("img/3.jpeg")
+cv::Mat cv_img = cv::imread("img/3.jpg")
 ```
-* replace `img/3.jpeg` to your image file path .
+* replace `img/3.jpg` to your image file path .
 
 * After this follow these command for execution process
  ```
