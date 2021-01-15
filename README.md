@@ -2,6 +2,11 @@
 
 
 
+
+
+
+
+
  ### Steps to build Caffe-SSD for object detection:
 
  #### Step 1:
@@ -89,9 +94,9 @@
 
 * open `inference.cpp` file using your text-editor and the search the below code inside it.
 ```
-cv::Mat cv_img = cv::imread("img/3.jpg")
+cv::Mat cv_img = cv::imread("img/3.jpeg")
 ```
-* replace `img/3.jpg` to your image file path .
+* replace `img/3.jpeg` to your image file path .
 
 * After this follow these command for execution process
  ```
